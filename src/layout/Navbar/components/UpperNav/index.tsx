@@ -25,7 +25,7 @@ const DataArrayTwo = [
   },
 ];
 const GridStyled = styled(Grid)(({ theme }) => ({
-  backgroundColor: theme.palette.custom.main,
+  backgroundColor: theme.palette.primary.main,
   paddingBlock: theme.spacing(1),
 }));
 function UpperNav() {

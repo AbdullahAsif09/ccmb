@@ -1,7 +1,7 @@
 import { Grid, Stack, Typography, styled } from "@mui/material";
 import LogoSvg from "../../../../assets/Logo.svg";
 import Buttons from "../../../../components/MUI/Buttons";
-const GridStyled = styled(Grid)(({ theme }) => ({}));
+const GridStyled = styled(Grid)(({}) => ({}));
 function LowerNav() {
   const ArrayData = [
     "Home",

@@ -19,10 +19,10 @@ interface StyledButtonProps extends MuiButtonProps {
 }
 const StyledButton = styled(Button)<StyledButtonProps>(
   ({ theme, colorBtn, backgroundBtn }) => ({
-    background: backgroundBtn ? backgroundBtn : theme.palette.custom.main,
+    background: backgroundBtn ? backgroundBtn : theme.palette.primary.main,
     color: colorBtn ? colorBtn : "white",
     "&:hover": {
-      background: backgroundBtn ? backgroundBtn : theme.palette.custom.main,
+      background: backgroundBtn ? backgroundBtn : theme.palette.primary.main,
       color: colorBtn ? colorBtn : "white",
     },
   })

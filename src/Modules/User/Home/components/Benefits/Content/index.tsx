@@ -13,7 +13,7 @@ function Content() {
   return (
     <Grid container gap={2}>
       <Grid item xs={12}>
-        <Typography variant={"h5"} fontWeight={600} color={"custom.main"}>
+        <Typography variant={"h5"} fontWeight={600} color={"primary.main"}>
           Benefits
         </Typography>
       </Grid>

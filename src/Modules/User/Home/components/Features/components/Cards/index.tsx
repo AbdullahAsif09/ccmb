@@ -14,7 +14,7 @@ function Cards({ CardsData }: any) {
             <Typography
               variant={"body1"}
               fontWeight={600}
-              color={"custom.main"}
+              color={"primary.main"}
             >
               {CardsData.title}
             </Typography>

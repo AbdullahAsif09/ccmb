@@ -10,7 +10,7 @@ function ContactUs() {
           paddingBlock: 3,
           paddingInline: 2,
           height: "100%",
-          backgroundColor: light.palette.custom.main,
+          backgroundColor: light.palette.primary.main,
         }}
         container
         gap={2}

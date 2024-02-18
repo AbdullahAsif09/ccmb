@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import "./App.css";
-import Layout from "./layout";
 import { Route, Routes } from "react-router-dom";
 import User from "./Modules/User";
 

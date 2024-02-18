@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography, styled } from "@mui/material";
+import { Grid, Stack, Typography, styled } from "@mui/material";
 import ImageBg from "../../../../../assets/Banner.png";
 import ImageCircle from "../../../../../assets/BannerCircle.svg";
 import ImageGirl from "../../../../../assets/Banner2.png";
@@ -10,7 +10,7 @@ interface ArrayData {
   title: string;
   icon: string;
 }
-const GridStyled = styled(Grid)(({ theme }) => ({
+const GridStyled = styled(Grid)(({}) => ({
   minHeight: "500px",
   background: `url(${ImageBg})`,
   backgroundPosition: "center",
@@ -66,7 +66,7 @@ function Banner() {
       >
         <Stack direction={"row"}>
           <Stack direction={"column"} alignItems={"flex-start"} gap={3}>
-            <Typography variant={"h3"} color={"custom.main"}>
+            <Typography variant={"h3"} color={"primary.main"}>
               Welcome To
             </Typography>
             <Typography variant={"h2"}>Bright Medical</Typography>

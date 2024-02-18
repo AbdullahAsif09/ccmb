@@ -5,11 +5,7 @@ import { PaletteMode } from "@mui/material";
 
 declare module "@mui/material/styles" {
   interface Theme {
-    palette: {
-      custom: {
-        main: string; // Define your custom color property
-      };
-    };
+    palette: {};
     typography: {
       fontFamily: string; // Define your default font family
     };
@@ -38,13 +34,12 @@ export const dark = createTheme({
   palette: {
     mode: darkTheme,
 
-    custom: {
+    primary: {
       main: customMain, // Use the same color for dark theme consistency
     },
   },
   typography: {
     fontFamily: defaultFontFamily,
-    fontWeight: "600",
   },
   components: {
     MuiTypography: {

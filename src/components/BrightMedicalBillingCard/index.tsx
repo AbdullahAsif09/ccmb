@@ -4,7 +4,7 @@ function BrightMedicalBillingCard() {
   return (
     <Card sx={{ paddingBlock: 3, paddingInline: 2, height:"100%" }}>
       <Stack direction={"column"} justifyContent={"flex-start"} gap={2}>
-        <Typography color={"custom.main"} fontWeight={600} variant={"h4"}>
+        <Typography color={"primary.main"} fontWeight={600} variant={"h4"}>
           Bring Medical Billing
         </Typography>
         <Typography variant={"body2"}>

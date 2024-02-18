@@ -10,7 +10,7 @@ function Footer() {
       justifyContent={"center"}
       alignItems={"center"}
       gap={5}
-      sx={{ background: light.palette.custom.main, p: 3, color: "white" }}
+      sx={{ background: light.palette.primary.main, p: 3, color: "white" }}
     >
       <Grid item xs={11}>
         <Upper />
