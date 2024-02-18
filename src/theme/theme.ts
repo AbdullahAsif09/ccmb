@@ -5,7 +5,11 @@ import { PaletteMode } from "@mui/material";
 
 declare module "@mui/material/styles" {
   interface Theme {
-    palette: {};
+    palette: {
+      primary: {
+        main: string; // Define your custom color property
+      };
+    };
     typography: {
       fontFamily: string; // Define your default font family
     };
@@ -20,7 +24,7 @@ const defaultFontFamily = '"Bai Jamjuree", sans-serif';
 export const light = createTheme({
   palette: {
     mode: lightTheme,
-    custom: {
+    primary: {
       main: customMain, // Assign your main color to the new property
     },
   },
