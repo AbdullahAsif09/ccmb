@@ -21,20 +21,20 @@ function Upper() {
     "Contact",
   ];
   return (
-    <Grid container>
-      <Grid item sx={{ paddingInline: 1 }} xs={3}>
+    <Grid container rowGap={10}>
+      <Grid item sx={{ paddingInline: 1 }} xs={12} sm={6} lg={3}>
         <Satyamstudio />
       </Grid>
-      <Grid item sx={{ paddingInline: 1 }} xs={3}>
+      <Grid item sx={{ paddingInline: 1 }} xs={12} sm={6} lg={3}>
         <SimpleLinks
           title={"Services"}
           StringArray={DataArrayOne}
         />
       </Grid>
-      <Grid item sx={{ paddingInline: 1 }} xs={3}>
+      <Grid item sx={{ paddingInline: 1 }} xs={12} sm={6} lg={3}>
         <SimpleLinks title="Company" StringArray={DataArrayTwo} />
       </Grid>
-      <Grid item sx={{ paddingInline: 1 }} xs={3}>
+      <Grid item sx={{ paddingInline: 1 }} xs={12} sm={6} lg={3}>
         <NewsLetter />
       </Grid>
     </Grid>

@@ -6,4 +6,13 @@
 
 body {
     font-family: "Bai Jamjuree", sans-serif;
+    background-color: #F3F7FD;
 }
+ @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import Benefits from "./components/Benefits";
+import MissionVision from "./components/MissionVision";
 
 function Home() {
   return (
@@ -26,6 +27,9 @@ function Home() {
       </Grid>
       <Grid item xs={11}>
         <Features />
+      </Grid>
+      <Grid item xs={12}>
+        <MissionVision />
       </Grid>
       <Grid item xs={11}>
         <Gallery />

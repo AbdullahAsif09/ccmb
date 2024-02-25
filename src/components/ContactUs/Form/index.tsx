@@ -32,7 +32,7 @@ import Buttons from "../../MUI/Buttons";
 function Form() {
   return (
     <Grid container sx={{ height: "100%" }} gap={2}>
-      <Grid item xs={5.8}>
+      <Grid item  xs={12} lg={5.8}>
         <TextField
           placeholder={"How can we help?"}
           fullWidth
@@ -47,7 +47,7 @@ function Form() {
           }}
         />
       </Grid>
-      <Grid item xs={5.8}>
+      <Grid item  xs={12} lg={5.8}>
         <TextField
           placeholder={"Email"}
           fullWidth
@@ -62,7 +62,7 @@ function Form() {
           }}
         />
       </Grid>
-      <Grid item xs={5.8}>
+      <Grid item  xs={12} lg={5.8}>
         <TextField
           placeholder={"Name"}
           fullWidth
@@ -77,7 +77,7 @@ function Form() {
           }}
         />
       </Grid>
-      <Grid item xs={5.8}>
+      <Grid item  xs={12} lg={5.8}>
         <TextField
           placeholder={"Number"}
           fullWidth
@@ -92,7 +92,7 @@ function Form() {
           }}
         />
       </Grid>
-      <Grid item xs={5.8}>
+      <Grid item  xs={12} lg={5.8}>
         <TextField
           placeholder={"Date"}
           fullWidth
@@ -107,7 +107,7 @@ function Form() {
           }}
         />
       </Grid>
-      <Grid item xs={5.8}>
+      <Grid item  xs={12} lg={5.8}>
         <Buttons
           sx={{ p: 1.6 }}
           colorBtn={"black"}
@@ -117,7 +117,7 @@ function Form() {
           Send
         </Buttons>
       </Grid>
-      {/* <Grid item xs={5.8}> */}
+      {/* <Grid item  xs={12} lg={5.8}> */}
       {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
           <StyledDatePicker />
         </LocalizationProvider>

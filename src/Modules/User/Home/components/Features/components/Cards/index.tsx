@@ -4,7 +4,7 @@ import Buttons from "../../../../../../../components/MUI/Buttons";
 function Cards({ CardsData }: any) {
   return (
     <Card
-      elevation={2}
+      elevation={4}
       sx={{ height: "100%", width: "100%", paddingBlock: 3, paddingInline: 2 }}
     >
       <Grid container gap={2}>

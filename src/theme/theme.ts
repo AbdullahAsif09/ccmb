@@ -9,6 +9,9 @@ declare module "@mui/material/styles" {
       primary: {
         main: string; // Define your custom color property
       };
+      secondary: {
+        main: string;
+      };
     };
     typography: {
       fontFamily: string; // Define your default font family
@@ -26,6 +29,9 @@ export const light = createTheme({
     mode: lightTheme,
     primary: {
       main: customMain, // Assign your main color to the new property
+    },
+    secondary: {
+      main: "#E1EAFC",
     },
   },
   typography: {

@@ -54,7 +54,7 @@ function CardsGrid() {
   return (
     <Grid container>
       {ArrayData.map((e, i) => (
-        <Grid item sx={{ paddingInline: 1, paddingBlock: 1 }} key={i} xs={3}>
+        <Grid item sx={{ paddingInline: 1, paddingBlock: 1 }} key={i} xs={12} sm={6} lg={3}>
           <Cards CardsData={e} />
         </Grid>
       ))}

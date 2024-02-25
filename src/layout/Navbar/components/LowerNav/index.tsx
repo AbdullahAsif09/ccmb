@@ -1,16 +1,46 @@
 import { Grid, Stack, Typography, styled } from "@mui/material";
 import LogoSvg from "../../../../assets/Logo.svg";
 import Buttons from "../../../../components/MUI/Buttons";
+import { useNavigate } from "react-router";
 const GridStyled = styled(Grid)(({}) => ({}));
 function LowerNav() {
+  const navigate = useNavigate();
   const ArrayData = [
-    "Home",
-    "About",
-    "Services",
-    "Specialties",
-    "Request Demo",
-    "Pricing",
-    "Contact",
+    {
+      name: "Home",
+      // icon: <Home />,
+      url: "/",
+    },
+    // {
+    //   name: "About",
+    //   icon: <Info />,
+    //   url: "/about",
+    // },
+    {
+      name: "Services",
+      // icon: <MedicalServices />,
+      url: "/services",
+    },
+    {
+      name: "Specialities",
+      // icon: <Star />,
+      url: "/specialities",
+    },
+    {
+      name: "Request Demo",
+      // icon: <BubbleChart />,
+      url: "/demo",
+    },
+    {
+      name: "Pricing",
+      // icon: <PriceChange />,
+      url: "/pricing",
+    },
+    {
+      name: "Contact Us",
+      // icon: <Mail />,
+      url: "/contact",
+    },
   ];
   return (
     <GridStyled container>
@@ -30,14 +60,15 @@ function LowerNav() {
           justifyContent={"center"}
           gap={2}
         >
-          {ArrayData.map((e, i) => (
+          {ArrayData?.map((e, i) => (
             <Typography
+              onClick={() => navigate(e?.url)}
               sx={{ cursor: "pointer" }}
               key={i}
               fontWeight={600}
               variant={"body2"}
             >
-              {e}
+              {e?.name}
             </Typography>
           ))}
         </Stack>

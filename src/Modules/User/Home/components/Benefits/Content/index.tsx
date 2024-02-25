@@ -1,7 +1,9 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import Buttons from "../../../../../../components/MUI/Buttons";
+import useWindowWidth from "../../../../../../hook/useWindowWidth";
 
 function Content() {
+  const windowWidth = useWindowWidth();
   const ArrayList: string[] = [
     "Real-time claim settlement",
     "Quick accounts receivable",
@@ -47,7 +49,11 @@ function Content() {
         </Typography>
       </Grid>
       <Grid item xs={12}>
-        <Stack direction={"row"} gap={2}>
+        <Stack
+          direction={windowWidth < 600 ? "column" : "row"}
+          alignItems={"flex-start"}
+          gap={2}
+        >
           <Buttons>Facebook</Buttons>
           <Buttons backgroundBtn="#CD201F">Youtube</Buttons>
           <Buttons>Linkedin</Buttons>
