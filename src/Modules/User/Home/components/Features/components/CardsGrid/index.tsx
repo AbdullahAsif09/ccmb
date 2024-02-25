@@ -12,43 +12,43 @@ function CardsGrid() {
   const ArrayData = [
     {
       img: ImageOne,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Customized Report",
+      para: "Get comprehensive insights into your payment, charges or adjustments trends for every billing entry. provides data reports in easy-to-read format.",
     },
     {
       img: ImageTwo,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Security",
+      para: "Our medical billing software is compliant with HIPAA regulations. We ensure no leakage of patients’ data while processing any info.",
     },
     {
       img: ImageThree,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Patient Helpdesk",
+      para: "Streamline and enhance all patient interactions from scheduling and billing to post-encounter communication with our patient helpdesk.",
     },
     {
       img: ImageFour,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Follow-up",
+      para: "For any denial, BellMedex’s A/R specialists will take swift and effective action to ensure reimbursements, keeping you up-to-date on appeals.",
     },
     {
       img: ImageFive,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Payment Posting",
+      para: "Post ERAs and EOBs in a timely manner as our team of experts verifies each claim for appropriate payment while our A/R team follows up on  denied claim.",
     },
     {
       img: ImageSix,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Electronic Submit",
+      para: "Corrections and re-submissions are completed systematically and in a timely manner for any claims that are held to identify the issue. ",
     },
     {
       img: ImageSeven,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Charge Entry",
+      para: "Get timely reimbursement as our detailed and error-free charge entry process ensures first-time approved claim submission. ",
     },
     {
       img: ImageEight,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Eligibility Check",
+      para: "We confirm every patient’s insurance eligibility to streamline your process, shorten account receivable days, and avoid denials.",
     },
   ];
   return (
