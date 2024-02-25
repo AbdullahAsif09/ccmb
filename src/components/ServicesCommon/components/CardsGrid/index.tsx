@@ -19,20 +19,20 @@ function CardsGrid() {
     {
       imgOne: MainTwo,
       imgTwo: MainSvgTwo,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Medical Billing Services",
+      para: "A knowledgeable medical biller can optimize revenue performance for the physician practice or healthcare… ",
     },
     {
       imgOne: MainThree,
       imgTwo: MainSvgThree,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "AR Recovery Services",
+      para: "Bright Health Care solutions have a professional AR recovery team, we make sure every old claim gets…",
     },
     {
       imgOne: MainFour,
       imgTwo: MainSvgFour,
-      title: "Prior Authorization Services",
-      para: "Bright Health Care Solutions provide prior authorization services as our goal is to get ...",
+      title: "Provider Enrollment Services",
+      para: "Contact us for your Medicare or Commercial payer enrollments with our payer contracting experts…",
     },
   ];
   return (
