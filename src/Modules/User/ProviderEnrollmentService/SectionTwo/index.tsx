@@ -1,44 +1,36 @@
 import { Grid, Stack, Typography } from "@mui/material";
-import ImageOne from "../../../../assets/Services/picOne.png";
+import ImageOne from "../../../../assets/Home/Photos/imageOne.png";
 function SectionTwo() {
-  const listData = [
-    "Wedding Valet Parking",
-    "Private Party Valet Parking",
-    "Private Dinner Valet Parking",
-    "Fundraiser Valet Parking",
-    "Other Special Events",
-  ];
   return (
-    <Grid container sx={{mb:10}}>
+    <Grid container sx={{mb:10}} rowGap={4}>
       <Grid
         item
+        xs={12}
+        md={6}
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        xs={6}
       >
         <img style={{ width: "80%" }} src={ImageOne} alt="" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Stack direction={"column"} gap={2}>
           <Typography variant={"body2"} color={"grey"}>
             Our Services
           </Typography>
-          <Typography variant={"h3"}>AR Recover Services</Typography>
-          <Typography variant={"body1"}>
-            Valet parking for your special event is the mark of a gracious host,
-            but more often than not is a necessity. Valet parking can:
+          <Typography width={"90%"} variant={"h4"}>Provider Enrollment Services</Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Contact us for your Medicare or Commercial payer enrollments with our payer contracting experts.
+Payer enrollment (aka provider enrollment) credentials are specifically used for applying to an insurance panel.
           </Typography>
-          <ul style={{marginLeft:"20px"}}>
-            {listData.map((e, i) => (
-              <li key={i}>{e}</li>
-            ))}
-          </ul>
-          <Typography variant={"body1"}>
-            Our parking attendants receive numerous compliments for their
-            appearance, friendly service and professionalism. Please feel free
-            to call us about your event.
-          </Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Medical credentialing is a repository of information to verify the valid status of a healthcare practice and each of its members.</Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Medical Credentialing is the exhaustive process by which background, education, identity, residency, licensing, and other criteria are verified.
+</Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Medical credentialing and physician credentialing are terms that are sometimes used interchangeably, but medical credentialing applies to any professional
+who administers care: physicians, therapists, nurses, radiologists, etc.?</Typography>
         </Stack>
       </Grid>
     </Grid>

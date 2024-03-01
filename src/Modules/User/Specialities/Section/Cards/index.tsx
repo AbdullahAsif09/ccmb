@@ -1,17 +1,11 @@
 import { Card, Stack, Typography } from "@mui/material";
-import VectorOne from "../../../../../assets/Specialities/Vector.svg";
-function Cards() {
+function Cards({data}:any) {
   return (
-    <Card sx={{ m: 1, p: 2 }} elevation={4}>
-      <Stack direction={"column"} gap={1}>
-        <img src={VectorOne} style={{ width: "30px" }} alt="" />
-        <Typography variant={"h5"} fontWeight={600}>
-          Service Name
-        </Typography>
-        <Typography variant={"body2"} fontWeight={500}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed.
+    <Card sx={{ margin: 1, paddingBlock: 3 }} elevation={4}>
+      <Stack direction={"column"} justifyContent={"center"} alignItems={"center"} gap={1}>
+        <img src={data.icon} style={{ width: "30px" }} alt="" />
+        <Typography variant={"body1"} fontWeight={600}>
+          {data.title}
         </Typography>
       </Stack>
     </Card>

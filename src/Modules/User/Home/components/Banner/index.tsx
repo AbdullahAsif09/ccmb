@@ -7,6 +7,7 @@ import TopLevelSvg from "../../../../../assets/Home/Banner/topLevel.svg";
 import ServicesSvg from "../../../../../assets/Home/Banner/professionalServices.svg";
 import Buttons from "../../../../../components/MUI/Buttons";
 import useWindowWidth from "../../../../../hook/useWindowWidth";
+import { useNavigate } from "react-router";
 interface ArrayData {
   title: string;
   icon: string;
@@ -21,6 +22,7 @@ const GridStyled = styled(Grid)(({}) => ({
 }));
 function Banner() {
   const windowWidth = useWindowWidth();
+  const navigate = useNavigate();
   const ArrayData: ArrayData[] = [
     {
       title: "Professional Dentist",
@@ -106,7 +108,7 @@ function Banner() {
               seamless Revenue Cycle Management Services, Let’s get your net
               patient revenue increase by leaving billing to the experts.
             </Typography>
-            <Buttons>Contact Us</Buttons>
+            <Buttons onClick={()=>navigate("/contact")}>Contact Us</Buttons>
           </Stack>
         </Stack>
       </Grid>

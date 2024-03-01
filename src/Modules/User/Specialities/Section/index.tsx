@@ -1,5 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import Cards from "./Cards";
+import { DataCards } from "./data";
 
 function Section() {
   return (
@@ -34,11 +35,9 @@ function Section() {
           </Typography>
         </Stack>
       </Grid>
-      {Array(8)
-        .fill(null)
-        .map((e, i) => (
+      {DataCards?.map((e, i) => (
           <Grid item key={i} xs={12} md={6} lg={3}>
-            <Cards />
+            <Cards data={e} />
           </Grid>
         ))}
     </Grid>

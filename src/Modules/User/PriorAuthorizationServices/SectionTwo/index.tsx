@@ -1,43 +1,33 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import ImageOne from "../../../../assets/Services/picOne.png";
 function SectionTwo() {
-  const listData = [
-    "Wedding Valet Parking",
-    "Private Party Valet Parking",
-    "Private Dinner Valet Parking",
-    "Fundraiser Valet Parking",
-    "Other Special Events",
-  ];
   return (
-    <Grid container sx={{mb:10}}>
+    <Grid container sx={{mb:10}} rowGap={4}>
       <Grid
         item
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        xs={6}
+        md={6}
+        xs={12}
       >
         <img style={{ width: "80%" }} src={ImageOne} alt="" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item md={6} xs={12}>
         <Stack direction={"column"} gap={2}>
           <Typography variant={"body2"} color={"grey"}>
             Our Services
           </Typography>
-          <Typography variant={"h3"}>AR Recover Services</Typography>
-          <Typography variant={"body1"}>
-            Valet parking for your special event is the mark of a gracious host,
-            but more often than not is a necessity. Valet parking can:
+          <Typography width={"90%"} variant={"h4"}>Prior Authorization Services</Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Bright Health Care Solutions provide prior authorization services as our goal is to get your work burden reduced by leaving all the hectic work to our experts.
           </Typography>
-          <ul style={{marginLeft:"20px"}}>
-            {listData.map((e, i) => (
-              <li key={i}>{e}</li>
-            ))}
-          </ul>
-          <Typography variant={"body1"}>
-            Our parking attendants receive numerous compliments for their
-            appearance, friendly service and professionalism. Please feel free
-            to call us about your event.
+          <Typography width={"90%"} variant={"body1"}>
+            Prior authorization is usually required if you need a complex treatment or prescription.
+Coverage will not happen without it. That’s why beginning the prior authorization process early is important. Our Experts are here to get the prior authorization
+          </Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            done so you don’t must do the messy work and can deal with your patients in a smooth and timely manner.
           </Typography>
         </Stack>
       </Grid>

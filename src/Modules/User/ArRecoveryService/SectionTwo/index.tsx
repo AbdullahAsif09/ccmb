@@ -1,13 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import ImageOne from "../../../../assets/Services/picOne.png";
 function SectionTwo() {
-  const listData = [
-    "Wedding Valet Parking",
-    "Private Party Valet Parking",
-    "Private Dinner Valet Parking",
-    "Fundraiser Valet Parking",
-    "Other Special Events",
-  ];
   return (
     <Grid container sx={{mb:10}}>
       <Grid
@@ -15,30 +8,28 @@ function SectionTwo() {
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        xs={6}
+        xs={12}
+        md={6}
       >
         <img style={{ width: "80%" }} src={ImageOne} alt="" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6} >
         <Stack direction={"column"} gap={2}>
           <Typography variant={"body2"} color={"grey"}>
             Our Services
           </Typography>
-          <Typography variant={"h3"}>AR Recover Services</Typography>
-          <Typography variant={"body1"}>
-            Valet parking for your special event is the mark of a gracious host,
-            but more often than not is a necessity. Valet parking can:
+          <Typography width={"90%"} variant={"h4"}>AR Recover Services</Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Bright Health Care solutions have professional AR recovery team, we make sure every old claim gets processed correctly for maximum payments.
+Accounts Receivable (AR) is the money owed to Providers or medical billing companies for the medical care rendered to patients.
           </Typography>
-          <ul style={{marginLeft:"20px"}}>
-            {listData.map((e, i) => (
-              <li key={i}>{e}</li>
-            ))}
-          </ul>
-          <Typography variant={"body1"}>
-            Our parking attendants receive numerous compliments for their
-            appearance, friendly service and professionalism. Please feel free
-            to call us about your event.
+          <Typography width={"90%"} variant={"body1"}>
+            
+Identifying the root cause for claim denials is one of the important processes in Accounts Receivable management.
           </Typography>
+          <Typography width={"90%"} variant={"body1"}>
+The staff must be highly skilled to analyze the reason for claim rejection, correct the claims and re-file without delay.
+Also, it is essential to examine denial patterns and find proper solutions to eradicate future occurrence of denials.          </Typography>
         </Stack>
       </Grid>
     </Grid>

@@ -12,6 +12,7 @@ interface ButtonProps {
   backgroundBtn?: string;
   colorBtn?: string;
   sx?: SxProps<Theme>;
+  onClick?: () => void;
 }
 interface StyledButtonProps extends MuiButtonProps {
   colorBtn?: string;
@@ -27,12 +28,13 @@ const StyledButton = styled(Button)<StyledButtonProps>(
     },
   })
 );
-function Buttons({ children, colorBtn, backgroundBtn, ...rest }: ButtonProps) {
+function Buttons({ children, colorBtn, backgroundBtn,onClick, ...rest }: ButtonProps) {
   return (
     <StyledButton
       variant={"contained"}
       colorBtn={colorBtn}
       backgroundBtn={backgroundBtn}
+      onClick={onClick}
       {...rest}
     >
       {children}

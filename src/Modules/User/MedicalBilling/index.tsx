@@ -23,7 +23,7 @@ function MedicalBilling() {
           gap={3}
         >
           <Typography color={"black"} fontWeight={600} variant={"h2"}>
-            Provider Enrollment Services
+            Medical Billing Services
           </Typography>
           <Typography fontWeight={500} variant={"body1"}>
             Auto Paladium is the first impression & the final touch of any event

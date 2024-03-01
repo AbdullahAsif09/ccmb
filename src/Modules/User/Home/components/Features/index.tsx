@@ -21,9 +21,9 @@ function Features() {
         <CardsGrid />
       </Grid>
       <Grid item xs={12}>
-        <Buttons sx={{ margin: "auto", display: "block" }}>
+        {/* <Buttons sx={{ margin: "auto", display: "block" }}>
           View All Services
-        </Buttons>
+        </Buttons> */}
       </Grid>
     </Grid>
   );

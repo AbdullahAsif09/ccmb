@@ -21,9 +21,9 @@ function Gallery() {
         <CardsGrid />
       </Grid>
       <Grid item xs={12}>
-        <Buttons sx={{ margin: "auto", display: "block" }}>
+        {/* <Buttons sx={{ margin: "auto", display: "block" }}>
           View All Photos
-        </Buttons>
+        </Buttons> */}
       </Grid>
     </Grid>
   );

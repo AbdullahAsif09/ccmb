@@ -1,8 +1,10 @@
 import { Grid, Typography } from "@mui/material";
 import Buttons from "../../../../../components/MUI/Buttons";
 import CardsGrid from "./components/CardsGrid";
+import { useNavigate } from "react-router";
 
 function Services() {
+  const navigate = useNavigate()
   return (
     <Grid container gap={3}>
       <Grid item xs={12}>
@@ -21,7 +23,7 @@ function Services() {
         <CardsGrid />
       </Grid>
       <Grid item xs={12}>
-        <Buttons sx={{ margin: "auto", display: "block" }}>
+        <Buttons onClick={()=>navigate("/services")} sx={{ margin: "auto", display: "block" }}>
           View All Services
         </Buttons>
       </Grid>

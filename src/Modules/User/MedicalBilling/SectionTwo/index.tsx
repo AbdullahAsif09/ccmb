@@ -1,43 +1,35 @@
 import { Grid, Stack, Typography } from "@mui/material";
-import ImageOne from "../../../../assets/Services/picOne.png";
+import ImageOne from "../../../../assets/medicalbillings.png";
 function SectionTwo() {
-  const listData = [
-    "Wedding Valet Parking",
-    "Private Party Valet Parking",
-    "Private Dinner Valet Parking",
-    "Fundraiser Valet Parking",
-    "Other Special Events",
-  ];
   return (
-    <Grid container sx={{mb:10}}>
+    <Grid container sx={{mb:10}} rowGap={4}>
       <Grid
         item
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        xs={6}
+        md={6}
+        xs={12}
       >
         <img style={{ width: "80%" }} src={ImageOne} alt="" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item md={6}
+        xs={12}>
         <Stack direction={"column"} gap={2}>
           <Typography variant={"body2"} color={"grey"}>
             Our Services
           </Typography>
-          <Typography variant={"h3"}>AR Recover Services</Typography>
-          <Typography variant={"body1"}>
-            Valet parking for your special event is the mark of a gracious host,
-            but more often than not is a necessity. Valet parking can:
+          <Typography width={"90%"} variant={"h3"}>Medical Billing Services</Typography>
+          <Typography width={"90%"} variant={"body1"}>A knowledgeable medical biller can optimize revenue performance for the physician practice or healthcare organization.
           </Typography>
-          <ul style={{marginLeft:"20px"}}>
-            {listData.map((e, i) => (
-              <li key={i}>{e}</li>
-            ))}
-          </ul>
-          <Typography variant={"body1"}>
-            Our parking attendants receive numerous compliments for their
-            appearance, friendly service and professionalism. Please feel free
-            to call us about your event.
+          <Typography width={"90%"} variant={"body1"}>
+            
+Our Expert medical billers will make sure that you will be reimbursed at the maximum, and we will manage your account. We will also provide you with the best medical billing services.
+          </Typography>
+          <Typography width={"90%"} variant={"body1"}>
+            Medical billing is the process of generating healthcare claims to submit to insurance companies for the purpose of obtaining payment for medical
+services rendered by providers and provider organizations. After translating a healthcare service into a billing claim, the medical biller follows
+ the claim to ensure the organization receives reimbursement for the work the provider performed
           </Typography>
         </Stack>
       </Grid>
